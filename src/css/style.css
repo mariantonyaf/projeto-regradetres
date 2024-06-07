@@ -87,9 +87,9 @@ body{
     font-weight: 600;
     cursor: pointer;
     width: 100%;
-    transition: background-color .5s ease;
+    transition: background .5s ease;
 }
 
-#calculate:hover{
-    background-color: var(--color-primary-2);
+#calculate:hover {
+    background: var(--color-primary-2);
 }
