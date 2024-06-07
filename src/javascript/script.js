@@ -10,5 +10,9 @@ document.getElementById('calculate').addEventListener('click', function(){
 
     let result = (num3 * num2) / num1
 
-    document.getElementById('result').textContent = result
+    if(Number.isInteger(result)){
+        document.getElementById('result').textContent = result
+    } else{
+        document.getElementById('result').textContent = result.toFixed(2).replace('.', ',')
+    }
 })
